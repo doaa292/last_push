@@ -96,6 +96,86 @@ All code was written and fully understood before submission.
 ---
 ## Contributors
 
-* `<oalabed>`
-* `<domansou>`
+## 👥 Contributors
+
+This project was developed collaboratively by **Doa' Manasrah** and **Omar Alabed**, with each contributor focusing on specific aspects of the implementation while working together on integration and testing.
+
+### 🔹 Omar Alabed
+Omar was responsible for studying and implementing the core data structures and input handling components of the project. His contributions include:
+
+- **Stack Implementation**
+  - Designing and implementing the linked-list based stack structure.
+  - Managing memory allocation and deallocation for stack nodes.
+  - Implementing utility functions related to stack manipulation.
+
+- **Parsing**
+  - Handling command-line arguments and tokenization.
+  - Validating numeric inputs and detecting duplicates.
+  - Converting input data into usable integer arrays.
+  - Implementing error handling for invalid inputs.
+
+- **Benchmark Module**
+  - Studying and implementing the benchmarking concept.
+  - Writing the code responsible for counting operations.
+  - Providing explanations and metrics such as complexity, strategy, and disorder.
+
+**Related Files/Functions:**
+- `push_swap.h` (struct definitions related to stack and benchmark)
+- Stack utilities: `new_node`, `ft_push`, `stack_size`, `assign_index`, `free_stack`
+- Parsing: `ft_atoi`, `to_int_array`, `is_number`, `ft_duplicate`, `print_error`
+- Tokenization: `collect_tokens`, `split_whitespace`, `free_split`, `is_space`
+- Benchmark: `bench_init`, `bench`, and operation counters within all stack operations
+
+---
+
+### 🔹 Doa' Manasrah
+Doa' focused on the algorithmic aspects of the project and the coordination between different modules. Her contributions include:
+
+- **Sorting Algorithms**
+  - Studying and implementing efficient sorting strategies.
+  - Implementing multiple algorithms such as `simple_sort`, `radix_sort`, `sort_medium_chunk`, and `adaptive_sort`.
+  - Developing logic to select the optimal strategy based on the level of disorder.
+
+- **Flags Handling**
+  - Designing and implementing command-line flag management.
+  - Setting benchmarking strategies and controlling program behavior through flags.
+
+- **Integration**
+  - Linking all project components together within the `main` workflow.
+  - Ensuring smooth interaction between parsing, stack operations, sorting algorithms, and benchmarking.
+
+**Related Files/Functions:**
+- Sorting: `simple_sort`, `radix_sort`, `sort_medium_chunk`, `adaptive_sort`
+- Analysis: `compute_disorder`, `is_sorted`
+- Flags & Integration: `handle_flags`, `set_strategy`, `check_sorted`, `init_stack`
+- Program orchestration within `main.c`
+
+---
+
+### 🤝 Shared Contributions
+
+Both contributors collaborated on several important aspects of the project:
+
+- **Integration of all modules** to ensure seamless functionality.
+- **Extensive testing** using a wide range of test cases, including:
+  - Valid inputs.
+  - Edge cases (e.g., INT limits, single number, already sorted lists).
+  - Invalid inputs that should trigger the `"Error"` message.
+- **Debugging and optimization** to ensure correctness and efficiency.
+- **Project design discussions** and decision-making regarding architecture and strategy selection.
+
+---
+
+### 📁 Summary Table
+
+| Area | Contributor |
+|------|------------|
+| Stack Implementation | Omar Alabed |
+| Parsing & Input Validation | Omar Alabed |
+| Benchmark Module | Omar Alabed |
+| Sorting Algorithms | Doa' Manasrah |
+| Flags Handling | Doa' Manasrah |
+| Integration & Main Workflow | Doa' Manasrah |
+| Testing & Debugging | Both |
+
 
